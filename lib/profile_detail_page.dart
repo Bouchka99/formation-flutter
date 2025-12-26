@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:profile_resume/pages/email_detail_page.dart';
+import 'package:profile_resume/pages/linkedin_detail_page.dart';
+import 'package:profile_resume/pages/phone_detail_page.dart';
 
 
 class ProfileDetailPage extends StatelessWidget {
@@ -113,7 +116,14 @@ class ProfileDetailPage extends StatelessWidget {
                       label: "Téléphone",
                       icon: Icons.phone,
                       onTap: (){
-
+                        // Navigate to Screen / Route / Page / Class
+                        print("Navigate to PhoneDetailPage");
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => PhoneDetailPage(
+                            phoneNumber: "58878149",
+                          ))
+                        );
                       },
                       color: Color(0xFFE0FBE8),
                     ),
@@ -124,7 +134,13 @@ class ProfileDetailPage extends StatelessWidget {
                       label: "Email",
                       icon: Icons.email_outlined,
                       onTap: (){
-
+                        // Navigate to Screen / Route / Page / Class
+                        print("Navigate to EmailDetailPage");
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => EmailDetailPage(
+                            ))
+                        );
                       },
                       color: Color(0xFFE3F2FD),
                     ),
@@ -135,7 +151,13 @@ class ProfileDetailPage extends StatelessWidget {
                       label: "Linkedin",
                       icon: Icons.web_asset,
                       onTap: (){
-
+                        // Navigate to Screen / Route / Page / Class
+                        print("Navigate to LinkedInDetailPage");
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => LinkedInDetailPage(
+                            ))
+                        );
                       },
                       color: Color(0xFFEEF2FF),
                     ),
